@@ -50,7 +50,7 @@
    *   @signature - function(line)
    *   @context - the element matching `className`
    *
-    */
+   */
   this.bind = function (event, handler) {
     if (events[event] == null) events[event] = [];
     events[event].push(handler);
@@ -66,12 +66,8 @@
    */
   this.load = function (src, callback) {
     if (load.language) src += '.' + load.language;
-    var isJS = src.match(/\.js$/);
-    if (isJS) {
-      loadJS('limescripts/lib/' + src, callback);
-    } else {
-      loadCS('limescripts/lib/' + src, callback);
-    }
+    var loader = src.match(/\.js$/) ? loadJS : loadCS;
+    loader('limescripts/lib/' + src, callback);
   };
 
   /*
