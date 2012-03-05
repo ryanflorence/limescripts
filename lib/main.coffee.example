@@ -1,0 +1,6 @@
+load.language = 'coffee'
+
+load 'cloudApp.coffee'
+load 'gist.coffee'
+load 'twitter.coffee'
+
