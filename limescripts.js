@@ -11,7 +11,8 @@
    * built around binding to global events that trigger when a message is
    * added. There are static events, and dynamic events (like fired for
    * elements with certain classNames, etc). To get a feel for the types of
-   * events available, uncomment line 189 while you use lime chat.
+   * events available, uncomment the first line of `function trigger` later
+   * in this file while you use lime chat.
    *
    * @param {String}   event   - the name of the event you want to bind to
    * @param {Function} handler - the function to call
@@ -87,7 +88,7 @@
   };
 
   /*
-   * Load a CoffeeScript file from the `lib` directory
+   * Load a CoffeeScript file
    *
    * @param {String} src
    * @param {Function} calback
