@@ -24,10 +24,6 @@
    *   @signature - function(line)
    *   @context - line
    *
-   * @event 'html'
-   *   @signature - function(html, line)
-   *   @context - line
-   *
    * @event 'link' - when a message contains a link
    *   @signature - function(href, line)
    *   @context - the link anchor element
@@ -145,9 +141,6 @@
 
     // line type event
     trigger(type, line, [line]);
-
-    // html event
-    trigger('html', line, [line.innerHTML, line]);
 
     // highlight event
     if (line.getAttribute('highlight') === 'true') {

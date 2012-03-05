@@ -1,6 +1,15 @@
 load.language = 'coffee'
+load 'cloudApp'
+load 'gist'
+load 'twitter'
 
-load 'cloudApp.coffee'
-load 'gist.coffee'
-load 'twitter.coffee'
+###
+# load JS like this
+load 'whatever.js'
+
+# or set the language
+laod.language = 'js'
+load 'whatever' # js file
+load 'twitter.coffee' # coffee file
+###
 
