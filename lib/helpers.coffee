@@ -3,7 +3,7 @@
 #
 # @param {String} href - the url of the web page to load
 # @param {Function} callback
-@invisibleIframe = (href, callback) ->
+@injectIframe = (href, callback) ->
   iframe = document.createElement 'iframe'
   iframe.src = href
   iframe.setAttribute 'width', 0
