@@ -1,7 +1,7 @@
 # run this from the root of this repository: limescripts/
 #
 # usage:
-#   ./link.sh YourTheme.js
+#   ./link.sh YourTheme
 #
 # LimeChat will automatically load a JavaScript file with a filename that
 # matches your theme. Run this to create a link to limescripts.js so
