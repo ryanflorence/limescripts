@@ -3,6 +3,8 @@ load 'cloudApp'
 load 'gist'
 load 'twitter'
 
+# load 'jira_issues'
+
 ###
 # load JS like this
 load 'whatever.js'
