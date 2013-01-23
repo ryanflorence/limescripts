@@ -45,13 +45,6 @@ use_jquery_dollarsign = ($) ->
     keys_equal = (set_a, set_b) ->
       return keys_subset(set_a, set_b) and keys_subset(set_b, set_a)
 
-    regexp_escape = (s) ->
-      s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
-
-    replace_all = (text, substr, fn) ->
-      pattern = new RegExp(regexp_escape(issue_id), "g")
-      text.replace(pattern, fn)
-
     fetch_and_store_issue = (issue_id, store, always_fn) ->
       request_issue issue_id,
         success: ( data ) ->
