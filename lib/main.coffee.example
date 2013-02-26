@@ -8,7 +8,7 @@ load 'twitter'
 load 'whatever.js'
 
 # or set the language
-laod.language = 'js'
+load.language = 'js'
 load 'whatever' # js file
 load 'twitter.coffee' # coffee file
 ###
