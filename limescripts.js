@@ -134,7 +134,7 @@
 
   // triggers all the events
   function triggerEvents (line) {
-    var type = line.getAttribute('type');
+    var type = line.getAttribute('_type');
 
     // line event
     trigger('line', line, [line]);
