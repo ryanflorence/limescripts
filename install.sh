@@ -7,6 +7,6 @@
 # matches your theme. Run this to create a link to limescripts.js so
 # LimeChat will load it in.
 cd ..
-ln -s limescripts/limescripts.js $1.js
+ln -s limescripts/limescripts.js "$1.js"
 cd limescripts
 
