@@ -188,7 +188,7 @@
   function processMessage (event) {
     var node = event.target;
     var parent = node.parentNode;
-    var isLine = node.className.match(/line/);
+    var isLine = node != null && node.className.match(/line/);
     if (parent !== document.body || !isLine) return;
     triggerEvents(node);
   }
